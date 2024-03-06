@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lieferheld.de</title>
+    <link rel="icon" type="image/x-icon" href="./img/smalllogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="json_data.js"></script>
+    <script src="script.js"></script> 
+</head>
+<body onload="loadOrderPage()">
+    <header>
+        <img class="mainpage_logo_big" src="./img/lieferheldlogo.png" alt="brandLogo">
+        <img class="mainpage_logo_small" src="./img/smalllieferheldlogo.png" alt="brandLogo">
+        <h1>Speisekarte</h1>
+        <img class="burger_logo" src="./img/bars-solid.svg" alt="burgerMenuLogo">
+    </header>
+
+
+
+    <div class="order_page">
+        <div class="menu_page">
+            <div class="brand_header_img">
+                <img src="./img/header4.png" alt="peterParkerPizzaHeader">
+            </div>
+            <div class="brand_name">
+                <h2>Peter Parker Pizza</h2>
+                <img src="./img/vote.png" alt="rating">
+                    <div class="delivery_time">
+                        <img src="./img/time.png" alt="deliveryTime">
+                    </div>
+            </div>
+
+            <hr>
+
+            <div class="normal_pizza_menu">
+                <img src="./img/pizzanormal.jpg" alt="pizzaPicture">
+                <h3>Pizza</h3>
+                    <div id="pizzaContainer"></div>                    
+            </div>
+
+            <div class="normal_pizza_menu">
+                <img src="./img/pizzaveggie.jpg" alt="pizzaPicture">
+                <h3>Vegetarische Pizza</h3>
+                    <div id="vegetarContainer"></div>            
+            </div>
+
+            <div class="normal_pizza_menu">
+                <img src="./img/pizzacalzone.png" alt="pizzaPicture">
+                <h3>Pizza Calzone</h3>
+                    <div id="calzoneContainer"></div>                   
+            </div>
+
+            <div class="normal_pizza_menu">
+                <img src="./img/drinks.png" alt="pizzaPicture">
+                <h3>Getränke</h3>
+                    <div id="drinkContainer"></div>        
+            </div>
+
+            <div class="impressum_card">
+                <div class="impressum_headline">
+                    <img src="./img/spider-solid.svg" alt="ImpressumIcon">
+                    <h4>Impressum</h4>
+                </div>
+                <div class="impressum_info">
+                <p>Marco Mundt handelt im Namen von Peter Parker Pizza</p>
+                <p>Marvel Straße 7</p>
+                <p>51065 Köln</p>
+                <a href="">Sende und eine E-Mail</a>
+                <p>Fax: +492421488822</p>
+                <br>
+    
+                <p>Plattform der EU-Kommission zur Online-Streitbeilegung:</p>
+                <a target="_blank" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>
+    
+                <hr>
+    
+                <p>Wir sind ein professioneller Anbieter. Erfahre mehr darüber, wie wir gemeinsam mit Lieferheld.de die Verbraucherverantwortung übernehmen.</p>
+                </div>  
+            </div>
+        </div>
+
+        <div class="shopping_cart_big">
+            <div class="shopping_cart_headline">
+                <h4>Warenkorb</h4>
+                <img src="./img/time.png" alt="">
+            </div>
+
+            <div id="deliveryContainer" class="ready_to_delivery">
+
+            </div>
+<!--
+            
+                <div class="one_of_delivery">
+                    <div class="amount_name_price">
+                        <p>1</p>
+                        <p>Thanos' BBQ Chicken Calzone</p>
+                        <p>3,00 €</p>
+                    </div>
+                    <div class="how_mutch">
+                        <img class="cursor_pointer" onclick="removeOneDish()" src="./img/minus-solid.svg" alt="minusIcon">
+                        <p>1</p>
+                        <img class="cursor_pointer" onclick="addOneDish()" src="./img/plus-solid.svg" alt="plusIcon">
+                    </div>
+                </div>
+
+                <div class="pay_delivery">
+                    <div class="space_between">
+                        <p>Zwischensumme</p>
+                        <p>21,96 €</p>
+                    </div>
+                    <div class="space_between">
+                        <p>Lieferkosten</p>
+                        <p>Kostenlos</p>
+                    </div>
+                    <div class="space_between">
+                        <p>Gesamt</p>
+                        <p>21,96 €</p>
+                    </div>
+                    <button class="cursor_pointer">Bezahlen (Preis) €</button>
+                </div>
+            
+   -->
+     
+            <div id="deliveryPlaceholder" class="delivery_truck">
+                <img src="./img/truck-fast-solid.svg" alt="deliveryTruck">
+                <h4>Fülle deinen Warenkorb</h4>
+                <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+            </div>
+       
+        </div>
+
+        
+    </div>
+
+   
+    
+  
+
+    <footer>
+        <div class="footer_links">
+            <a href="">Ein Restaurant empfehlen</a>
+            <a href="">Ein Restaurant anmelden</a>
+            <a href="">Jobs</a>
+            <a href="">AGB</a>
+            <a href="">Datenschutzerklärung</a>
+            <a href="">Impressum</a>
+            <a href="">Verwendung von Cookies</a>
+            <a href="">Bug Bounty</a>
+            <a href="">Ethik-Hotline</a>
+        </div>
+        <div>
+            <p>© 2024 Lieferheld.de</p>
+        </div>
+    </footer>
+
+    <div id="smallShoppingCartClosed" class="shopping_cart_small_closed">
+        <div>
+            <button onclick="openShoppingCart()">Warenkorb (Preis) €</button>
+        </div>
+    </div>
+
+    <div id="smallShoppingCartOpen" class="shopping_cart_small_open d_none">
+
+        <div class="cancel_menu">
+            <img onclick="closeShoppingCart()" class="cursor_pointer" src="./img/xmark-solid.svg" alt="xIcon">
+        </div>
+                    <div class="amount_name_price how_mutch">
+                        <div class="display_flex">
+                            <p>1</p>
+                            <p>Thanos' BBQ Chicken Calzone</p>
+                            <p>3,00 €</p>
+                        </div>
+                        <div class="display_flex">
+                            <img class="cursor_pointer" onclick="removeOneDish()" src="./img/minus-solid.svg" alt="minusIcon">
+                            <p>1</p>
+                            <img class="cursor_pointer" onclick="addOneDish()" src="./img/plus-solid.svg" alt="plusIcon">
+                        </div>
+                    </div>
+
+                    <div class="pay_delivery">
+                    <div class="space_between margin_site">
+                        <p>Zwischensumme</p>
+                        <p>21,96 €</p>
+                    </div>
+                    <div class="space_between margin_site">
+                        <p>Lieferkosten</p>
+                        <p>Kostenlos</p>
+                    </div>
+                    <div class="space_between margin_site">
+                        <p>Gesamt</p>
+                        <p>21,96 €</p>
+                    </div>
+                    <button class="cursor_pointer">Bezahlen (Preis) €</button>
+                </div>
+    </div>
+    
+</body>
+</html>

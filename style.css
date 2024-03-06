@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #c30010;
+}
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #c30010;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #fffb00;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-shadow: 1px 1px 16px #d8d8d8;
+}
+
+.mainpage_logo_big {
+    height: 40px;
+}
+
+.mainpage_logo_small {
+    display: none;
+}
+
+h1 {
+    font-size: 16px;
+    color: #c30010;
+}
+
+.burger_logo {
+    height: 24px;
+}
+
+.order_page {
+    display: flex;
+}
+
+.menu_page {
+    width: 80vw;
+    height: fit-content;
+    border-right: lightgray solid 1px;
+    box-shadow: 1px 1px 16px #d8d8d8;
+}
+
+.brand_header_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.brand_name {
+    height: 80px;
+    margin: 0 160px;
+    padding: 16px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+hr {
+    margin: 16px 0;
+    opacity: 0.5;
+    border-right: lightgray solid 1px;
+    box-shadow: 10px 10px 160px #d8d8d8;
+}
+
+.normal_pizza_menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 160px;
+}
+
+.normal_pizza_menu img {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+h3 {
+    margin: 16px 0;
+    font-size: 24px;
+}
+
+.eat_container {
+    border: lightgray solid 1px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.eat_container:hover {
+    background-color: #f7f7f7;
+}
+
+.eat_container img {
+    height: 24px;
+    background-color: #f7f7f7;
+    padding: 8px;
+    border-radius: 48px;
+}
+
+.menu_and_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.pizza_mini_img img {
+    height: 160px;
+    padding: 0;
+    border-radius: 160px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.eat_container p {
+    margin: 16px 0;
+}
+
+.impressum_card {
+    margin: 0 160px 24px;
+}
+
+.impressum_headline {
+    display: flex;
+    gap: 8px;
+}
+
+.impressum_headline img {
+    height: 24px;
+}
+
+.impressum_card h4 {
+    margin-bottom: 16px;
+}
+
+.impressum_card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #858585;
+}
+
+.impressum_card a {
+    color: black;
+    font-size: 14px;
+    color: #858585;
+}
+
+.impressum_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.shopping_cart_big {
+    width: 20vw;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.shopping_cart_big h4 {
+    margin-top: 40px;
+}
+
+.shopping_cart_headline img {
+    height: 80px;
+}
+
+.one_of_delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amount_name_price {
+    display: flex;
+    justify-content: space-around;
+}
+
+.how_mutch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.how_mutch img {
+    height: 24px;
+    margin: 16px;
+    padding: 8px;
+    background-color: #d8d8d8;
+    border-radius: 24px;
+}
+
+.pay_delivery {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.pay_delivery button {
+    margin: 24px;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 24px;
+    background-color: #c30010;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.space_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin_site {
+    margin: 0 16px;
+}
+
+.delivery_truck {
+    margin: 16px 16px;
+}
+
+.delivery_truck img {
+    height: 32px;
+    margin-top: 80px;
+}
+
+.delivery_truck h4 {
+    margin-top: 40px;
+}
+
+.delivery_truck p {
+    margin: 16px;
+}
+
+.shopping_cart_small_closed {
+    display: none;
+}
+
+.shopping_cart_small_open {
+    display: none;
+}
+
+.shopping_cart_small_closed button {
+    padding: 8px 40px;
+    font-size: 24px;
+    border-radius: 24px;
+    background-color: #c30010;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shopping_cart_small_open button {
+    padding: 8px 40px;
+    font-size: 24px;
+    border-radius: 24px;
+    background-color: #c30010;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer {
+    height: 120px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer_links {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.footer_links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+@media(max-width: 1440px) {
+    .shopping_cart_headline img {
+        height: 72px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .shopping_cart_headline img {
+        display: none;
+    }
+
+    .shopping_cart_big {
+        display: none;
+    }
+
+    .shopping_cart_small_closed {
+        height: 10vh;
+        bottom: 0;
+        background-color: #f7f7f7;
+        position: sticky;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopping_cart_small_open {
+        height: 100vh;
+        position: sticky;
+        bottom: 0;
+        background-color: #f7f7f7;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cancel_menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 24px 24px;
+    }
+
+    .cancel_menu img {
+        height: 32px;
+    }
+
+    .amount_name_price {
+        justify-content: space-around;
+    }
+
+    .how_mutch {
+        display: flex ;
+        justify-content: space-around;
+    }
+
+    .display_flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_page {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .brand_name {
+        height: 80px;
+        margin: 0 24px;
+        padding: 16px;
+    }
+
+    .normal_pizza_menu {
+        margin: 0 24px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .brand_name {
+        height: 160px;
+    }
+
+    .delivery_time {
+        display: flex;
+        justify-content: center;
+    }
+
+    .impressum_card {
+        margin: 0 24px 24px;
+    }    
+}
+
+.d_none {
+    display: none;
+}
+
+@media(max-width: 770px) {
+    .brand_name {
+        height: 160px;
+    }
+}
+
+@media(max-width: 440px) {
+    .brand_name {
+        height: 120px;
+    }
+    
+    .brand_name img {
+        height: 56px;
+    }
+
+    .mainpage_logo_big {
+        display: none;
+    }
+
+    .mainpage_logo_small {
+        display: block;
+        height: 48px;
+    }
+
+    .pizza_mini_img img {
+        display: none;
+    }
+
+    .how_mutch {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 320px) {
+    .brand_name img {
+        height: 40px;
+    }
+
+    .brand_name {
+        height: 80px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}

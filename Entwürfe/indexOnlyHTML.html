@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lieferheld.de</title>
+    <link rel="icon" type="image/x-icon" href="./img/smalllogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+</head>
+<body onload="loadOrderPage()">
+    <header>
+        <img class="mainpage_logo_big" src="./img/lieferheldlogo.png" alt="brandLogo">
+        <img class="mainpage_logo_small" src="./img/smalllieferheldlogo.png" alt="brandLogo">
+        <h1>Speisekarte</h1>
+        <img class="burger_logo" src="./img/bars-solid.svg" alt="burgerMenuLogo">
+    </header>
+
+
+
+    <div class="order_page">
+        <div class="menu_page">
+            <div class="brand_header_img">
+                <img src="./img/header4.png" alt="peterParkerPizzaHeader">
+            </div>
+            <div class="brand_logo">
+                <img src="./img/pizzalogo.png" alt="peterParkerPizzaLogo">
+            </div>
+            <div class="brand_name">
+                <h2>Peter Parker Pizza</h2>
+                <img src="./img/vote.png" alt="rating">
+                    <div class="delivery_time">
+                        <img src="./img/time.png" alt="deliveryTime">
+                    </div>
+            </div>
+
+            <hr>
+
+            <div class="normal_pizza_menu">
+                <img src="./img/pizzanormal.jpg" alt="pizzaPicture">
+                <h3>Pizza</h3>
+                    <div onclick="addToShoppingCart()" class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Spider-Man Special</h4>
+                                <p>Tomatensoße, Mozzarella, Schinken, Champignons, Paprika, Oliven</p>
+                            </div>
+                            <div>
+                                <h4>10,90 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/1.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div class="add_to_shop">
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Hulk's Meaty Mayhem</h4>
+                                <p>Tomatensoße, Mozzarella, Pepperoni, Schinken, Salami, Hackfleisch</p>
+                            </div>
+                            <div>
+                                <h4>11,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/2.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Iron Man's BBQ Blast</h4>
+                                <p>Barbecue-Soße, Mozzarella, Rinderhack, Paprika, Zwiebeln</p>
+                            </div>
+                            <div>
+                                <h4>12,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/3.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Wolverine's Bacon Blitz</h4>
+                                <p>Tomatensoße, Mozzarella, Speck, Schinken, Salami, Paprika</p>
+                            </div>
+                            <div>
+                                <h4>10,90 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/4.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Thor's Thunderous</h4>
+                                <p>Tomatensoße, Mozzarella, Salami, Schinken, Pepperoni, Wurst</p>
+                            </div>
+                            <div>
+                                <h4>11,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/5.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Captain America's Spicy Surprise</h4>
+                                <p>Tomatensoße, Mozzarella, pikante Wurst, Jalapeños, Zwiebeln</p>
+                            </div>
+                            <div>
+                                <h4>11,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/6.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Black Panther's Chicken Supreme</h4>
+                                <p>Tomatensoße, Mozzarella, Hühnerbruststreifen, Paprika, Zwiebeln, Mais</p>
+                            </div>
+                            <div>
+                                <h4>12,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/pizza/7.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>                    
+            </div>
+            <div class="normal_pizza_menu">
+                <img src="./img/pizzaveggie.jpg" alt="pizzaPicture">
+                <h3>Vegetarische Pizza</h3>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Green Goblin's Veggie Delight</h4>
+                                <p>Tomatensoße, Mozzarella, Paprika, Zucchini, Champignons, Oliven</p>
+                            </div>
+                            <div>
+                                <h4>10,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/1.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Mary Janes Margherita Magic</h4>
+                                <p>Tomatensoße, Mozzarella, frische Tomatenscheiben, Basilikum</p>
+                            </div>
+                            <div>
+                                <h4>9,90 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/2.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Scarlets Garden</h4>
+                                <p>Tomatensoße, Mozzarella, Spinat, Brokkoli, Tomaten, Knoblauch</p>
+                            </div>
+                            <div>
+                                <h4>11,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/3.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Loki's No Meat</h4>
+                                <p>Tomatensoße, Mozzarella, Artischockenherzen, Oliven, Zwiebeln, Feta</p>
+                            </div>
+                            <div>
+                                <h4>11,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/4.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Vision's Cheesy Sensation</h4>
+                                <p>Tomatensoße, Mozzarella, Spinat, Ricotta, Parmesan, Knoblauch</p>
+                            </div>
+                            <div>
+                                <h4>10,90 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/5.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Marvels Mushroom Madness</h4>
+                                <p>Tomatensoße, Mozzarella, Champignons, Trüffelöl, Petersilie</p>
+                            </div>
+                            <div>
+                                <h4>10,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/6.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Gamora's Pesto Paradise</h4>
+                                <p>Pesto-Soße, Mozzarella, Tomaten, Artischocken, Pinienkerne, Rucola</p>
+                            </div>
+                            <div>
+                                <h4>11,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/vegetarisch/7.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>                    
+            </div>
+            <div class="normal_pizza_menu">
+                <img src="./img/pizzacalzone.png" alt="pizzaPicture">
+                <h3>Pizza Calzone</h3>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Deadpool's Calzone Classico</h4>
+                                <p>Tomatensoße, Mozzarella, Schinken, Champignons, Paprika</p>
+                            </div>
+                            <div>
+                                <h4>11,90 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/1.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Groot's Veggie Calzone</h4>
+                                <p>Tomatensoße, Mozzarella, Paprika, Zucchini, Champignons, Oliven</p>
+                            </div>
+                            <div>
+                                <h4>11,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/2.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Thanos' BBQ Chicken Calzone</h4>
+                                <p>Barbecue-Soße, Mozzarella, Hühnerbruststreifen, Paprika, Zwiebeln</p>
+                            </div>
+                            <div>
+                                <h4>12,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/3.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Doctor Octopus' Pepperoni Pouch</h4>
+                                <p>Tomatensoße, Mozzarella, Pepperoni, Schinken, Salami, Oliven</p>
+                            </div>
+                            <div>
+                                <h4>12,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/4.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Spider-Gwen's Caprese Calzone</h4>
+                                <p>Tomatensoße, Mozzarella, Tomaten, frischer Basilikum, Parmesan</p>
+                            </div>
+                            <div>
+                                <h4>11,90 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/5.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Falcon's Spicy Beef Pocket</h4>
+                                <p>Tomatensoße, Mozzarella, Rinderhack, Jalapeños, Zwiebeln, Knoblauch</p>
+                            </div>
+                            <div>
+                                <h4>12,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/6.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Captain Marvel's Mediterranean Calzone</h4>
+                                <p>Tomatensoße, Mozzarella, Artischocken, Oliven, Zwiebeln, Feta</p>
+                            </div>
+                            <div>
+                                <h4>12,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/calzone/7.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>                    
+            </div>
+            <div class="normal_pizza_menu">
+                <img src="./img/drinks.png" alt="pizzaPicture">
+                <h3>Getränke</h3>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Venom's Cola</h4>
+                                <p>Ein erfrischendes Getränk mit dem Geschmack von Cola</p>
+                            </div>
+                            <div>
+                                <h4>2,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/1.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Green Goblin's Ginger Ale</h4>
+                                <p>Ein prickelndes Ingwergetränk</p>
+                            </div>
+                            <div>
+                                <h4>2,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/2.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Vision's Vanilla Shake</h4>
+                                <p>Ein cremiger Milchshake mit dem süßen Geschmack von Vanille</p>
+                            </div>
+                            <div>
+                                <h4>2,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/3.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>May's Apple Juice</h4>
+                                <p>Ein erfrischender Apfelsaft</p>
+                            </div>
+                            <div>
+                                <h4>3,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/4.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Iron Man's Iced Tea</h4>
+                                <p>Ein erfrischender Eistee</p>
+                            </div>
+                            <div>
+                                <h4>2,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/5.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Hulk's Lemonade</h4>
+                                <p>Eine erfrischende Zitronenlimonade</p>
+                            </div>
+                            <div>
+                                <h4>2,50 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/6.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>
+                    <div class="eat_container">
+                        <div class="menu_and_price">
+                            <div>
+                                <h4>Daily Bugle Now</h4>
+                                <p>Ein kräftiger Kaffee</p>
+                            </div>
+                            <div>
+                                <h4>3,00 €</h4>
+                            </div>
+                        </div>
+                        <div class="pizza_mini_img" >
+                            <img src="./img/drink/7.png" alt="spiderManSpecialPizza">
+                        </div>
+                        <div>
+                            <img src="./img/plus-solid.svg" alt="plusButton">
+                        </div>
+                    </div>                    
+            </div>
+
+            <div class="impressum_card">
+                <div class="impressum_headline">
+                    <img src="./img/spider-solid.svg" alt="ImpressumIcon">
+                    <h4>Impressum</h4>
+                </div>
+                <div class="impressum_info">
+                <p>Marco Mundt handelt im Namen von Peter Parker Pizza</p>
+                <p>Marvel Straße 7</p>
+                <p>51065 Köln</p>
+                <a href="">Sende und eine E-Mail</a>
+                <p>Fax: +492421488822</p>
+                <br>
+    
+                <p>Plattform der EU-Kommission zur Online-Streitbeilegung:</p>
+                <a target="_blank" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>
+    
+                <hr>
+    
+                <p>Wir sind ein professioneller Anbieter. Erfahre mehr darüber, wie wir gemeinsam mit Lieferheld.de die Verbraucherverantwortung übernehmen.</p>
+                </div>  
+            </div>
+        </div>
+
+        <div class="shopping_cart_big">
+            <div class="shopping_cart_headline">
+                <h4>Warenkorb</h4>
+                <img src="./img/time.png" alt="">
+            </div>
+
+            <div class="ready_to_delivery">
+                <div class="one_of_delivery">
+                    <div class="amount_name_price">
+                        <p>1</p>
+                        <p>Thanos' BBQ Chicken Calzone</p>
+                        <p>3,00 €</p>
+                    </div>
+                    <div class="how_mutch">
+                        <img class="cursor_pointer" onclick="removeOneDish()" src="./img/minus-solid.svg" alt="minusIcon">
+                        <p>1</p>
+                        <img class="cursor_pointer" onclick="addOneDish()" src="./img/plus-solid.svg" alt="plusIcon">
+                    </div>
+                </div>
+
+                <div class="pay_delivery">
+                    <div class="space_between">
+                        <p>Zwischensumme</p>
+                        <p>21,96 €</p>
+                    </div>
+                    <div class="space_between">
+                        <p>Lieferkosten</p>
+                        <p>Kostenlos</p>
+                    </div>
+                    <div class="space_between">
+                        <p>Gesamt</p>
+                        <p>21,96 €</p>
+                    </div>
+                    <button class="cursor_pointer">Bezahlen (Preis) €</button>
+                </div>
+            </div>
+
+    <!-- 
+            <div class="delivery_truck">
+                <img src="./img/truck-fast-solid.svg" alt="deliveryTruck">
+                <h4>Fülle deinen Warenkorb</h4>
+                <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+            </div>
+      -->    
+        </div>
+
+        
+    </div>
+
+   
+    
+  
+
+    <footer>
+        <div class="footer_links">
+            <a href="">Ein Restaurant empfehlen</a>
+            <a href="">Ein Restaurant anmelden</a>
+            <a href="">Jobs</a>
+            <a href="">AGB</a>
+            <a href="">Datenschutzerklärung</a>
+            <a href="">Impressum</a>
+            <a href="">Verwendung von Cookies</a>
+            <a href="">Bug Bounty</a>
+            <a href="">Ethik-Hotline</a>
+        </div>
+        <div>
+            <p>© 2024 Lieferheld.de</p>
+        </div>
+    </footer>
+
+    <div class="shopping_cart_small">
+        <div>
+            <button onclick="openShoppingCart()">Warenkorb (Preis) €</button>
+        </div>
+    </div>
+</body>
+</html>

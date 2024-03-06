@@ -1,0 +1,9 @@
+Funktion zum hinzufügen in den Wahrenkorb ... wie bei google Keep
+Funktion zum Berechnen des Preises ... Erklärt Junus im Video
+Funktion Plus und Minus Speisen  
+
+Overflow beim Warenkorb damit ein Scrollbalken erstellt wird und die Gerichte nicht überlaufen 
+
+Button Switch liefern/abholen = Lieferkosten ändern sich 
+
+if Anfrage statt Placeholder verstecken
